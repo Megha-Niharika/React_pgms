@@ -1,0 +1,71 @@
+Spread operator example
+
+1.const person = {
+  name : 'abhay'
+  
+};
+
+const newPerson = {
+  ...person,
+  age: 28
+}
+console.log(newPerson);
+
+2.const num =[1,2,3];
+const newNum = [...num,4];
+console.log(newNum);
+
+Rest operator example
+
+1.const filter = (...args) => {
+return args.filter(element =>element ===1);
+}
+console.log(filter(1,2,3));
+
+
+Destructuring
+A. Array  Destructuring
+1.const num = [1,2,3];
+[num1,num2] = num;
+console.log(num1,num2)
+
+2.const num = [1,2,3];
+[num1, ,num3] = num;
+console.log(num1,num3)
+
+
+
+Reference and primitive types
+1.const person ={
+  name: 'abhay'
+};
+
+const sec = {
+ ...person
+}
+person.name = "vviv"
+console.log(sec);
+
+2.const numb = [1,2,3];
+const double = numb.map(num) => {
+return num*2;
+}
+console.log(numb);
+console.log(double);
+
+
+
+JS Array function
+
+map()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+find()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+findIndex()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+filter()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+reduce()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=b
+concat()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat?v=b
+slice()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+splice()  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+
+
+
